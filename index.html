@@ -1,160 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penny Power Kids</title>
+    <title>Articles</title>
     <style>
-        /* General styling */
+        /* General Styles */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f7f7f7; /* Light pastel background */
-            color: #333;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            background-color: #f4f7f6;
+            color: #333;
         }
 
-        /* Header styling */
+        /* Header Styling */
         header {
-            background-color: #A8D5BA; /* Soft pastel green */
-            color: #fff;
-            text-align: center;
-            padding: 40px 20px;
-            border-bottom: 2px solid #D6A6E0; /* Soft purple border for subtle contrast */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #66BB6A;
+            padding: 20px 40px;
+            color: white;
         }
 
-        h1 {
-            font-size: 3em;
-            margin: 0;
+        header img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .logo {
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Navigation Styling */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #333;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 18px;
             font-weight: bold;
         }
 
-        p {
-            font-size: 1.2em;
-            margin-top: 10px;
+        nav a:hover {
+            background-color: #81C784;
+            color: white;
         }
 
-        /* Navigation buttons */
-        .nav-buttons {
-            position: absolute;
-            top: 20px;
-            right: 20px;
+        /* Main Article Layout */
+        article {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
-        .nav-buttons a {
-            background-color: #F9E79F; /* Soft pastel yellow */
-            color: #333;
-            text-decoration: none;
-            padding: 12px 25px;
-            margin: 5px;
-            border-radius: 5px;
-            font-size: 1.1em;
-            transition: background-color 0.3s ease;
-        }
-
-        .nav-buttons a:hover {
-            background-color: #FAD1B2; /* Light pastel peach on hover */
-        }
-
-        /* Section styling */
-        section {
-            padding: 40px 20px;
-            margin: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            font-size: 2.5em;
-            color: #6C4F9C; /* Dark lavender for headings */
+        h1 {
+            font-size: 32px;
             margin-bottom: 20px;
+            color: #388E3C;
         }
 
-        .intro p {
-            font-size: 1.2em;
+        h3 {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #388E3C;
+            border-bottom: 2px solid #388E3C;
+            padding-bottom: 8px;
+        }
+
+        p {
+            font-size: 18px;
             line-height: 1.6;
             color: #555;
         }
 
-        /* Highlighted 'What You'll Learn' section */
-        .features {
-            background-color: #F9E79F; /* Soft pastel yellow */
-            border-left: 6px solid #A8D5BA; /* Soft green left border */
-            padding: 20px;
-            margin-top: 30px;
+        a {
+            color: #388E3C;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #66BB6A;
+        }
+
+        /* Image Section */
+        section img {
+            width: 100%;
+            max-width: 320px;
+            margin: 10px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .features h2 {
-            color: #6C4F9C; /* Dark lavender */
-        }
-
-        .features ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .features li {
-            background-color: #FAD1B2; /* Soft peach background */
-            margin: 15px 0;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-        }
-
-        .features li strong {
-            color: #6C4F9C; /* Dark lavender for emphasis */
-        }
-
-        /* Footer styling */
+        /* Footer Styling */
         footer {
-            background-color: #D6A6E0; /* Soft pastel purple */
-            color: #fff;
+            background-color: #66BB6A;
+            color: white;
             text-align: center;
-            padding: 20px;
+            padding: 15px;
             margin-top: 30px;
-            border-radius: 8px;
+            font-size: 16px;
         }
 
-        footer p {
-            margin: 0;
-            font-size: 1.1em;
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .logo {
+                font-size: 28px;
+                margin-top: 10px;
+            }
+
+            article {
+                padding: 20px 10px;
+                margin: 20px;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 12px;
+                font-size: 16px;
+            }
+
+            section img {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
+
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Penny Power Kids</h1>
-        <p>Your journey to saving, sharing, and making a difference!</p>
-        
-        <!-- Navigation buttons -->
-        <div class="nav-buttons">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-        </div>
+        <img src="sigma.png" alt="Logo">
+        <h1 class="logo">Penny Power Kids!</h1>
     </header>
 
-    <!-- Main content sections -->
-    <section class="intro" id="home">
-        <h2>Welcome to Penny Power Kids!</h2>
-        <p>Penny Power Kids is a website designed to help children understand the importance of saving money and using it wisely. The goal of the website is to teach kids how to manage their finances, plan for their future, and give back to those in need. Through fun activities, tips, and challenges, kids are encouraged to start saving early and to use their money in ways that can make a positive impact on both their own lives and the lives of others. The website aims to inspire the next generation to be responsible, thoughtful, and generous individuals.</p>
-    </section>
+    <!-- Navigation Section -->
+    <nav>
+        <a href="index.html">Back</a>
+    </nav>
 
-    <section class="features" id="about">
-        <h2>What You'll Learn</h2>
-        <ul>
-            <li><strong>Saving for the future:</strong> Learn how to set aside money and plan for what’s ahead.</li>
-            <li><strong>Managing your money:</strong> Get tips on budgeting and making smart choices with your money.</li>
-            <li><strong>Giving back:</strong> Discover the joy of helping others and supporting your community.</li>
-            <li><strong>Fun challenges:</strong> Engage in fun activities that make learning about money exciting!</li>
-        </ul>
-    </section>
+    <!-- Main Content Section -->
+    <article>
+        <h1>Saving Money</h1>
+        
+        <!-- Section 1: Why Save? -->
+        <section>
+            <h3>Why Save?</h3>
+            <p>Saving money isn't just about getting things you want now — it's about setting yourself up for the future. Whether you're saving for something special, your education, or simply learning how to be responsible with money, every penny adds up!</p>
+        </section>
+        
+        <!-- Section 2: Fun Ways to Save and Share -->
+        <section>
+            <h3>Fun Ways to Save and Share</h3>
+            <p>Saving money doesn’t have to be boring. We offer fun, interactive tips, challenges, and games to help you learn how to save, spend wisely, and give back. Start your own savings jar, track your progress, and join our community of young people making a difference.</p>
+        </section>
+        
+        <!-- Section 3: Learn More -->
+        <section>
+            <h3>Learn More</h3>
+            <p>
+                <a href="content1.html">Part 1</a><br>
+                <a href="content2.html">Part 2</a><br>
+                <a href="content3.html">Part 3</a>
+            </p>
+        </section>
 
+        <!-- Section 4: Check These Websites Out Too -->
+        <section>
+            <h3>Check These Websites Out Too!</h3>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+                <a href="https://www.huntington.com/learn/saving/how-to-save-money">
+                    <img src="saving.jpg" alt="Saving Tips 1">
+                </a>
+                <a href="https://americasaves.org/resource-center/insights/54-ways-to-save-money/">
+                    <img src="save.png" alt="Saving Tips 2">
+                </a>
+                <a href="https://www.manulife.com.ph/about-us/blog/5-tips-to-save-money-while-enjoying-life.html">
+                    <img src="tipssave.png" alt="Saving Tips 3">
+                </a>
+            </div>
+            <p>Made By: Penny Power Kids and Group 3- Sodium</p>
+        </section>
+    </article>
+
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Penny Power Kids. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
