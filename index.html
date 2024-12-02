@@ -11,8 +11,9 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f7f6;
+            background-color: #f0f8ff;
             color: #333;
+            line-height: 1.6;
         }
 
         /* Header Styling */
@@ -20,9 +21,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #66BB6A;
+            background: linear-gradient(135deg, #66BB6A, #81C784);
             padding: 20px 40px;
             color: white;
+            border-bottom: 5px solid #388E3C;
         }
 
         header img {
@@ -34,6 +36,7 @@
             font-size: 36px;
             font-weight: bold;
             letter-spacing: 1px;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
         }
 
         /* Navigation Styling */
@@ -41,22 +44,24 @@
             display: flex;
             justify-content: center;
             background-color: #fff;
-            padding: 10px 0;
+            padding: 15px 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
-            color: #333;
+            color: #388E3C;
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
             font-size: 18px;
             font-weight: bold;
+            transition: all 0.3s ease;
         }
 
         nav a:hover {
             background-color: #81C784;
             color: white;
+            transform: translateY(-2px);
         }
 
         /* Main Article Layout */
@@ -67,12 +72,15 @@
             background-color: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            border-left: 5px solid #388E3C;
+            border-right: 5px solid #388E3C;
         }
 
         h1 {
             font-size: 32px;
             margin-bottom: 20px;
             color: #388E3C;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
         }
 
         h3 {
@@ -85,7 +93,6 @@
 
         p {
             font-size: 18px;
-            line-height: 1.6;
             color: #555;
         }
 
@@ -99,6 +106,24 @@
             color: #66BB6A;
         }
 
+        /* Card Layout for Links */
+        .card {
+            background-color: #f8f8f8;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card a {
+            color: #388E3C;
+        }
+
         /* Image Section */
         section img {
             width: 100%;
@@ -106,6 +131,11 @@
             margin: 10px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        section img:hover {
+            transform: scale(1.1);
         }
 
         /* Footer Styling */
@@ -113,9 +143,10 @@
             background-color: #66BB6A;
             color: white;
             text-align: center;
-            padding: 15px;
-            margin-top: 30px;
+            padding: 20px;
             font-size: 16px;
+            margin-top: 30px;
+            border-top: 5px solid #388E3C;
         }
 
         footer a {
@@ -186,7 +217,7 @@
         </section>
         
         <!-- Section 3: Learn More -->
-        <section>
+        <section class="card">
             <h3>Learn More</h3>
             <p>
                 <a href="content1.html">Part 1</a><br>
@@ -220,3 +251,5 @@
 </body>
 
 </html>
+
+       
