@@ -11,7 +11,7 @@
             font-family: 'Comic Sans MS', cursive, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f3f7e9; /* Soft pastel green */
+            background-color: #d2e4d1; /* Pastel green */
             color: #333;
             line-height: 1.6;
         }
@@ -21,10 +21,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #ffd966; /* Soft yellow */
+            background: linear-gradient(135deg, #61c7c7, #f9cc3c); /* Aqua to yellow */
             padding: 20px 40px;
-            color: #333;
-            border-bottom: 5px solid #f4a7b9; /* Light pink */
+            color: white;
+            border-bottom: 5px solid #f9a7b0; /* Pink */
         }
 
         header img {
@@ -36,20 +36,24 @@
             font-size: 36px;
             font-weight: bold;
             letter-spacing: 1px;
-            color: #555;
+            color: #333; /* Darker text for contrast */
+            text-shadow: 2px 2px #ffffff; /* Light shadow for visibility */
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            padding: 5px 15px;
+            border-radius: 10px;
         }
 
         /* Navigation Styling */
         nav {
             display: flex;
             justify-content: center;
-            background-color: #a5d8d3; /* Aqua tone */
+            background-color: #fff;
             padding: 15px 0;
-            border-bottom: 3px solid #ffd966; /* Yellow */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
-            color: #333;
+            color: #61c7c7; /* Aqua */
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
@@ -59,9 +63,9 @@
         }
 
         nav a:hover {
-            background-color: #f4a7b9; /* Light pink */
+            background-color: #f9cc3c; /* Yellow */
             color: white;
-            border-radius: 8px;
+            transform: translateY(-2px);
         }
 
         /* Main Article Layout */
@@ -71,22 +75,22 @@
             padding: 20px;
             background-color: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            border-left: 5px solid #ffd966; /* Yellow */
-            border-right: 5px solid #a5d8d3; /* Aqua */
+            border-radius: 8px;
+            border-left: 5px solid #f9cc3c; /* Yellow */
+            border-right: 5px solid #61c7c7; /* Aqua */
         }
 
         h1 {
             font-size: 32px;
             margin-bottom: 20px;
-            color: #333;
+            color: #f9cc3c; /* Yellow */
         }
 
         h3 {
             font-size: 24px;
             margin-top: 20px;
-            color: #555;
-            border-bottom: 2px solid #ffd966; /* Yellow underline */
+            color: #61c7c7; /* Aqua */
+            border-bottom: 2px solid #61c7c7;
             padding-bottom: 8px;
         }
 
@@ -96,24 +100,23 @@
         }
 
         a {
-            color: #a5d8d3; /* Aqua */
+            color: #61c7c7; /* Aqua */
             text-decoration: none;
             font-weight: bold;
         }
 
         a:hover {
-            color: #f4a7b9; /* Light pink */
+            color: #f9cc3c; /* Yellow */
         }
 
         /* Card Layout for Links */
         .card {
-            background-color: #f9f9f9;
+            background-color: #f8f8f8;
             padding: 20px;
             margin: 20px 0;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
-            border-left: 4px solid #a5d8d3; /* Aqua */
         }
 
         .card:hover {
@@ -121,7 +124,7 @@
         }
 
         .card a {
-            color: #333;
+            color: #61c7c7; /* Aqua */
         }
 
         /* Image Section */
@@ -140,13 +143,13 @@
 
         /* Footer Styling */
         footer {
-            background-color: #f4a7b9; /* Light pink */
+            background-color: #7e84c5; /* Lavender */
             color: white;
             text-align: center;
             padding: 20px;
             font-size: 16px;
             margin-top: 30px;
-            border-top: 5px solid #ffd966; /* Yellow */
+            border-top: 5px solid #f9a7b0; /* Pink */
         }
 
         footer a {
@@ -191,8 +194,8 @@
 <body>
     <!-- Header Section -->
     <header>
-        <img src="logo.png" alt="Logo">
-        <h1 class="logo">Penny Power Kids</h1>
+        <img src="sigma.png" alt="Logo">
+        <h1 class="logo">Penny Power Kids!</h1>
     </header>
 
     <!-- Navigation Section -->
@@ -205,11 +208,34 @@
         <h1>Saving Money</h1>
         <section>
             <h3>Why Save?</h3>
-            <p>Saving money isn't just about getting things you want now — it's about setting yourself up for the future. Whether you're saving for something special, your education, or simply learning how to be responsible with money, every penny adds up!</p>
+            <p>Saving money isn't just about getting things you want now — it's about setting yourself up for the future.</p>
         </section>
         <section>
             <h3>Fun Ways to Save and Share</h3>
-            <p>Saving money doesn’t have to be boring. We offer fun, interactive tips, challenges, and games to help you learn how to save, spend wisely, and give back. Start your own savings jar, track your progress, and join our community of young people making a difference.</p>
+            <p>Saving money doesn’t have to be boring. We offer fun, interactive tips, challenges, and games to help you learn.</p>
+        </section>
+        <section class="card">
+            <h3>Learn More</h3>
+            <p>
+                <a href="content1.html">Part 1</a><br>
+                <a href="content2.html">Part 2</a><br>
+                <a href="content3.html">Part 3</a>
+            </p>
+        </section>
+        <section>
+            <h3>Check These Websites Out Too!</h3>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+                <a href="https://www.huntington.com/learn/saving/how-to-save-money">
+                    <img src="saving.jpg" alt="Saving Tips 1">
+                </a>
+                <a href="https://americasaves.org/resource-center/insights/54-ways-to-save-money/">
+                    <img src="save.png" alt="Saving Tips 2">
+                </a>
+                <a href="https://www.manulife.com.ph/about-us/blog/5-tips-to-save-money-while-enjoying-life.html">
+                    <img src="tipssave.png" alt="Saving Tips 3">
+                </a>
+            </div>
+            <p>Made By: Penny Power Kids and Group 3- Sodium</p>
         </section>
     </article>
 
