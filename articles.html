@@ -1,233 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penny Power Kids - Articles</title>
+		 <meta charset="UTF">
+		 <meta name="viewport" content="width=1920">
+	
+    <title>Articles</title>
     <style>
         body {
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-family: Times New Roman, serif;
             margin: 0;
             padding: 0;
-            background-color: #d2e4d1;
-            color: #333;
-            line-height: 1.6;
+            background-color: #DEF2C8;
         }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: linear-gradient(135deg, #61c7c7, #f9cc3c);
-            padding: 20px 40px;
-            color: white;
-            border-bottom: 5px solid #f9a7b0;
+		
+		header {
+            background-color: #C5DAC1;
+			display: flex;
+            padding: 20px;
+            text-align: left;
         }
-
-        header img {
-            width: 80px;
-            height: 80px;
-        }
-
+		
         .logo {
-            font-size: 36px;
-            font-weight: bold;
-            letter-spacing: 1px;
-            color: white;
-            text-shadow: 2px 2px #7e84c5;
+            font-size: 35px;
+            color:white;
+	    margin-right: 15x;
         }
-
+		
         nav {
             display: flex;
             justify-content: center;
-            background-color: #fff;
-            padding: 15px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #DEF2C8;
         }
-
+		
         nav a {
-            color: #61c7c7;
+            color: black;
             padding: 14px 20px;
             text-decoration: none;
             text-align: center;
-            font-size: 18px;
-            font-weight: bold;
-            transition: all 0.3s ease;
         }
-
+		
         nav a:hover {
-            background-color: #f9cc3c;
-            color: white;
-            transform: translateY(-2px);
+            background-color: #BBD5ED;
+            color: black;
         }
-
-        article {
-            max-width: 1200px;
-            margin: 40px auto;
+		nav a:visited {
+            background-color: #BBD5ED;
+            color: #ff88e8;
+        }
+		
+		section {
             padding: 20px;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            background-color:white;
             border-radius: 8px;
-            border-left: 5px solid #f9cc3c;
-            border-right: 5px solid #61c7c7;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
-        h1 {
-            font-size: 32px;
-            margin-bottom: 20px;
-            color: #f9cc3c;
-        }
-
-        h3 {
-            font-size: 24px;
-            margin-top: 20px;
-            color: #61c7c7;
-            border-bottom: 2px solid #61c7c7;
-            padding-bottom: 8px;
-        }
-
-        p {
-            font-size: 18px;
-            color: #555;
-        }
-
-        a {
-            color: #61c7c7;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            color: #f9cc3c;
-        }
-
-        .card {
-            background-color: #f8f8f8;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card a {
-            color: #61c7c7;
-        }
-
-        section img {
-            width: 100%;
-            max-width: 320px;
-            margin: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        section img:hover {
-            transform: scale(1.1);
-        }
-
+		
+		article {
+			font-size: 24px;
+            padding: 5px;
+            border: 6px dotted white;
+			text-align: center;
+         }
+			
+		section {
+            padding: 5px;
+            border: 5px dotted pink;
+         }
+         		
         footer {
-            background-color: #7e84c5;
-            color: white;
+            background-color: #c1e1dc;
+            color: #333;
             text-align: center;
-            padding: 20px;
-            font-size: 16px;
-            margin-top: 30px;
-            border-top: 5px solid #f9a7b0;
-        }
+            padding: 15px;
+            margin-top: 20px;
+		}
 
-        footer a {
-            color: white;
-            text-decoration: underline;
-        }
+	</style>
+</head>	
+	<body>
+		<header>
+			<img src="logo1.png" width="100px" height="100px">
+			<h1 class="logo">Penny Power Kids!</h1>
+		</header>
 
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
+		<nav>
+			<a href="index.html">Back</a>
+		</nav>
 
-            .logo {
-                font-size: 28px;
-                margin-top: 10px;
-            }
-
-            article {
-                padding: 20px 10px;
-                margin: 20px;
-            }
-
-            nav {
-                flex-direction: column;
-            }
-
-            nav a {
-                padding: 12px;
-                font-size: 16px;
-            }
-
-            section img {
-                max-width: 100%;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <img src="sigma.png" alt="Logo">
-        <h1 class="logo">Penny Power Kids!</h1>
-    </header>
-
-    <nav>
-        <a href="index.html">Back</a>
-    </nav>
-
-    <article>
-        <h1>Saving Money</h1>
-        <section>
-            <h3>Why Save?</h3>
-            <p>Saving money isn't just about getting things you want now — it's about setting yourself up for the future.</p>
-        </section>
-        <section>
-            <h3>Fun Ways to Save and Share</h3>
-            <p>Saving money doesn’t have to be boring. We offer fun, interactive tips, challenges, and games to help you learn.</p>
-        </section>
-        <section class="card">
-            <h3>Learn More</h3>
-            <p>
-                <a href="content1.html">Part 1</a><br>
-                <a href="content2.html">Part 2</a><br>
-                <a href="content3.html">Part 3</a>
-            </p>
-        </section>
-        <section>
-            <h3>Check These Websites Out Too!</h3>
-            <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
-                <a href="https://www.huntington.com/learn/saving/how-to-save-money">
-                    <img src="saving.jpg" alt="Saving Tips 1">
-                </a>
-                <a href="https://americasaves.org/resource-center/insights/54-ways-to-save-money/">
-                    <img src="save.png" alt="Saving Tips 2">
-                </a>
-                <a href="https://www.manulife.com.ph/about-us/blog/5-tips-to-save-money-while-enjoying-life.html">
-                    <img src="tipssave.png" alt="Saving Tips 3">
-                </a>
-            </div>
-            <p>Made By: Penny Power Kids and Group 3- Sodium</p>
-        </section>
-    </article>
-
-    <footer>
-        <p>&copy; 2024 Penny Power Kids. All rights reserved.</p>
-    </footer>
-</body>
-
+		  <article style="margin-top: 10px;">
+			<h1>What Are We Aiming?</h1>
+			<section>
+				<p style="text-align:justify">
+					Aiming to help alleviate poverty is not only a moral imperative but also a crucial step toward 
+					building more equitable and sustainable societies. Poverty, often caused by a combination of factors
+					such as economic inequality, lack of access to education, and limited job opportunities, traps individuals 
+					and communities in a cycle of hardship. Addressing poverty requires a multifaceted approach that tackles both
+					immediate needs and the root causes of economic disparity.
+					One of the first steps in combating poverty is ensuring access to basic necessities such as food, clean water, 
+					and healthcare. Programs aimed at providing emergency relief can make an immediate difference in the lives of those
+					in need. However, long-term solutions focus on empowerment, such as investing in education and vocational training, 
+					which provide individuals with the skills and opportunities to break free from the poverty cycle.
+				</p>
+			</section>
+			<section>
+				<p style="text-align:justify">
+					In addition to government intervention, 
+					partnerships with non-profit organizations, businesses, and communities can 
+					amplify efforts to support economic development. Sustainable practices, such as microfinance 
+					and community-based initiatives, help people create self-sufficient livelihoods, reducing reliance on aid.
+					Ultimately, addressing poverty requires both compassion and action. By targeting systemic inequalities and
+					fostering opportunities for growth and inclusion, we can build a future where poverty is not a barrier to human potential.
+				</p>
+			</section>
+			
+			<section>
+				<h3>Learn More</h3>
+				<h2>
+				<a href="content1.html">Part 1</a>
+				<br>
+				<a href="content2.html">Part 2</a>
+				<br>
+				<a href="content3.html">Part 3</a>
+				</h2>
+			</section>
+			
+			<section>
+				<h3>Check These Websites Out Too!</h3>
+				<a href="https://www.huntington.com/learn/saving/how-to-save-money"> <img src="saving.jpg" width="300px" height="300px"> </a>
+				<a href="https://borgenproject.org/how-to-stop-poverty-actions/"> <img src="save.png" width="300px" height="300px"> </a>
+				<a href="https://concernusa.org/news/solutions-to-poverty/"> <img src="tipssave.png" width="300px" height="300px"> </a>
+				<br>
+				<p>Made By: Penny Power Kids and Group 3-Sodium</p>
+			</section>
+		  </article>
+		  
+		<footer>
+			<p>&copy; 2024 Penny Power Kids. All rights reserved.</p>
+		</footer>
+		
+	</body>
 </html>
